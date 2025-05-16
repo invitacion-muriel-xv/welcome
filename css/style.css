@@ -1,0 +1,386 @@
+/* 
+.portada-padding{
+
+} */
+
+.message-padding {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+.calendar-padding {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.countdown-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.family-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reception-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.dress-padding {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.confirmation-padding {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+/* @media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .message_padding {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .message_padding {
+    padding-top: 200px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .message_padding {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .message_padding {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  .message_padding {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+} */
+
+/* general */
+
+:root {
+  --rose: #ee96b0;
+  --gris: rgb(102, 102, 102);
+  --gris-oscuro: #727272;
+}
+
+.text-rose {
+  color: var(--rose);
+}
+
+.text-gris {
+  color: var(--gris);
+}
+
+.event-title {
+  color: var(--rose);
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .event-title {
+    font-size: 25px;
+    line-height: 1.3;
+  }
+}
+/* fin-general */
+
+/*  */
+
+.event-menssage-text {
+  font-family: "Muli", sans-serif;
+  margin-top: 20px;
+  color: var(--gris-oscuro);
+}
+/*  */
+
+/* Reproductor de musica */
+.player-container {
+  /* background-color: #f8f9fa; */
+  padding: 0 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.progress-wrapper {
+  position: relative;
+  height: 60px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-color: #e9ecef;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--rose);
+  transition: width 0.1s linear;
+  border-radius: 4px;
+}
+
+.progress-heart {
+  position: absolute;
+  bottom: -12px;
+  transform: translateX(-50%);
+  z-index: 2;
+  cursor: grab;
+  touch-action: none;
+}
+
+.progress-heart i {
+  font-size: 1.5rem;
+  color: var(--rose);
+}
+
+.controls button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--rose);
+}
+
+.play-btn {
+  font-size: 2.2rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 50%;
+  /* background-color: #dc3545; */
+  /* color: #ffffff; */
+  margin: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .play-btn {
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .controls button {
+    font-size: 2.2rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .progress-heart i {
+    font-size: 1.2rem;
+  }
+}
+/* fin reproductor de musica */
+
+/* event-calendar-area */
+
+.event-calendar-date {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  color: #888;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Finish-event-calendar-area */
+
+/* event-countdown-area */
+.event_countdown_date {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  color: #888;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#countdown .time-box {
+  min-width: 60px;
+}
+
+.time-value {
+  font-family: "Playfair Display", serif;
+  color: var(--rose);
+}
+
+.time-label {
+  font-family: "Muli", sans-serif;
+  color: var(--gris);
+  font-weight: 500;
+}
+/* Finish-event-countdown-area */
+
+/* event_family_area */
+
+.custom-border {
+  border: 3px dotted #ee96b0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.event-family-card-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--gris-oscuro);
+}
+.event-family-card-text {
+  color: var(--gris-oscuro);
+  font-family: "Muli", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+/* Finish-event_family_area */
+
+/*event-reception-area*/
+.event-reception-time {
+  font-family: "Muli", sans-serif;
+  color: var(--gris-oscuro);
+}
+.event-reception-location {
+  font-family: "Muli", sans-serif;
+  color: var(--gris-oscuro);
+}
+/*FIN event-reception-area*/
+
+/* event_dress_area */
+.event-dress-text {
+  font-family: "Muli", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--gris);
+}
+
+.event-text-reserved {
+  font-size: 16px;
+  font-family: "Muli", sans-serif;
+  color: var(--gris-oscuro);
+}
+/*finish-event_dress_area*/
+
+/* event-confirmation-area */
+.event-confirmation-text {
+  font-size: 16px;
+  font-family: "Muli", sans-serif;
+  color: var(--gris-oscuro);
+}
+
+.custom-btn {
+  background-color: var(--rose);
+  color: white;
+}
+
+.custom-btn:hover {
+  background-color: var(--rose);
+  color: var(--gris-oscuro);
+}
+
+/* finish-event-confirmation-area */
+
+/* bbb */
+.degrad {
+  mask-image: linear-gradient(black 80%, transparent);
+}
+
+/* --------------------- */
+
+.event-countdown-area {
+  background-image: url("../img/fondos/1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .event-countdown-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+  }
+}
+
+.event-dress-area {
+  background-image: url("../img/fondos/1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .event-dress-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+  }
+}
+
+.event-reception-area {
+  background-image: url("../img/fondos/2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .event-reception-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+  }
+}
+
+.event-confirmation-area {
+  background-image: url("../img/fondos/5.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 400px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .event-confirmation-area {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+  }
+}
