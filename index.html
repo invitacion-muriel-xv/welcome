@@ -78,7 +78,7 @@
               El gran día
             </h3>
             <span class="d-block event-calendar-date" data-aos="zoom-in" data-aos-duration="1000">Mayo</span>
-            <img src="img/calendario/calendario.png" alt="Decoración floral para boda" class="img-fluid pt-2" />
+            <img src="img/calendario/calendario2.svg" alt="Decoración floral para boda" class="img-fluid pt-2" />
           </div>
         </div>
       </div>
@@ -255,6 +255,25 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "F12") {
+        e.preventDefault();
+      }
+
+      if (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) {
+        e.preventDefault();
+      }
+
+      if (e.ctrlKey && e.key === "u") {
+        e.preventDefault();
+      }
+    });
+  </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
